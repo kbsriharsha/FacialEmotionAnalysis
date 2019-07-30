@@ -15,7 +15,7 @@ cap = cv2.VideoCapture(0)
 # Importing models
 face_cascade = cv2.CascadeClassifier(mod_dir+'haarcascade_frontalface_default.xml')
 eyes_cascade = eye_cascade = cv2.CascadeClassifier(mod_dir+'haarcascade_eye.xml')
-emotions = load_model(mod_dir + 'emotionrecognizer.h5')
+emotions = load_model(mod_dir + 'gpu_mini_XCEPTION.63-0.64.hdf5')
 
 # emotion_labels
 emo = {0: 'angry', 1: 'disgust', 2: 'fear', 3: 'happy', 4: 'sad', 5: 'surprise', 6: 'neutral'}
