@@ -1,6 +1,6 @@
 pip:
 	numpy
-  pandas
+        pandas
 	matplotlib
 	dlib
 	scipy
@@ -11,4 +11,4 @@ pip:
 	imutils
 	mkl
 	cython
-  tensorflow
+        tensorflow
