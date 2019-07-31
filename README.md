@@ -13,6 +13,7 @@ This program uses the network named exception (https://arxiv.org/pdf/1710.07557.
 ### Procedure for using the code
 - For training your model, run `python training.py`. However I strongly recommend using model I trained it for you. 
 - For using the model on a live stream, run `python RealtimeAnalysis.py` where you can capture the live stream from the webcam and the model inference will be displayed. 
+- Notes: Use the gpu version of the model for the trained model
 
 ### References
 - Original Paper: https://arxiv.org/pdf/1710.07557.pdf
