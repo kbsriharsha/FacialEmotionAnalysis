@@ -37,14 +37,14 @@ while(True):
         # Getting boundaries for every eye
         for (ex,ey,ew,eh) in eyes:
             cv2.rectangle(roi_color,(ex,ey),(ex+ew,ey+eh),(0,255,0),2)
-        roi_gray = cv2.resize(roi_gray, (64,64))
+        roi_gray = cv2.resize(roi_gray, (48,48))
         face_emo = pre.preprocess_predict(roi_gray)
         emotion = emotions.predict(face_emo)
         emotion_probability = np.max(emotion)
         emotion_label_arg = np.argmax(emotion)
         print(emotion_label_arg)
         font = cv2.FONT_HERSHEY_TRIPLEX
-        cv2.putText(frame, emo[emotion_label_arg],(x+w,y), font, 1, (0,0,255), 2)
+        cv2.putText(frame, emo[emotion_label_arg],(x+w,y), font, 1, (0,255,0), 2)
 
 
     cv2.imshow('frame', frame)
