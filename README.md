@@ -8,7 +8,7 @@ Just execute the below command from your terminal for installing all the require
 
 ### Model Description
 
-This program uses the network named exception (https://arxiv.org/pdf/1710.07557.pdf), which is a combination of several residual blocks. I trained the network for 100 epochs which took me 56 hours on the MAC with 16gb ram. However I strongly recommend training your model on Google Colab using GPU's, where it took me 45 minutes. `56 hours to 45 min :D`
+This program uses the network named exception (https://arxiv.org/pdf/1710.07557.pdf), which is a combination of several residual blocks. I trained the network for 100 epochs which took me 48 hours on the MAC with 16gb ram. However I strongly recommend training your model on Google Colab using GPU's, where it took me 45 minutes. `56 hours to 45 min :D`
 
 ### Procedure for using the code
 - For training your model, run `python training.py`. However I strongly recommend using model I trained it for you. 
